@@ -1,0 +1,9 @@
+<%= link_to 'Add Thing', 'things/new', :class => 'btn btn-default' %>
+<h1>Things added</h1>
+<% @thing.each do |thing| %>
+  <div class="well">
+    <h3><%= thing.title %></h3>
+    <p><%= thing.body %></p>
+    <%= link_to "Read More", thing_path(thing), :class => 'btn btn-default' %>
+  </div>
+<% end %>

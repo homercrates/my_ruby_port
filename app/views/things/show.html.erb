@@ -1,0 +1,13 @@
+<h2><%= @thing.title %></h2>
+<p><%= @thing.body %></p>
+<hr>
+<%= link_to "Edit", edit_thing_path(@thing), :class => 'btn btn-default' %>
+<%= link_to "Delete", thing_path(@thing),
+					 method: :delete,
+					 data: {confirm: 'Sure?'},
+					 :class => 'btn btn-danger' %>
+					 
+<hr>
+
+<%= render 'thingcomments/thingcomments' %>
+<%= render 'thingcomments/form' %>

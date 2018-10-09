@@ -1,0 +1,27 @@
+
+<p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+ 
+<p>
+  <strong>Text:</strong>
+  <%= @article.text %>
+</p>
+
+
+<div class="backstuff">
+  <h2>Comments</h2>
+  <%= render @article.comments %>
+</div>
+
+<div class="backstuff2">
+  <h2>Add a comment:</h2>
+  <%= render 'comments/form' %>
+<!-- notice 'comments/_form' doesn't work.  I have not figured out why yet when that is the files literal name rails does spot it though and knows -->
+</div>
+<p>articles show </p>
+
+<%= link_to 'Edit', edit_article_path(@article) %> .
+<%= link_to 'Back', articles_path %> .
+<%= link_to 'Home', root_path %>
