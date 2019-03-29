@@ -22,3 +22,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+Built while taking a look at Ruby On Rails hosted on heroku. very simple forum / img dump / CRUD operation. built this curious as to the coding differences between ruby and JS

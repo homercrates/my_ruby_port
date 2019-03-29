@@ -1,0 +1,6 @@
+<h3>Comments</h3>
+<% @thing.thingcomments.each do |thingcomment| %>
+  <div class="well">
+  <p><stong><%= thingcomment.username %></stong>: <%= thingcomment.body %></p>
+  </div>
+<% end %>
